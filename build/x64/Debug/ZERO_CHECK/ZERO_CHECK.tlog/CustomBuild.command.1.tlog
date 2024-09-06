@@ -1,0 +1,10 @@
+^E:\GITREPO\CMAKETEST\CMAKETEST\BUILD\CMAKEFILES\FCDA5F8F61D5B617034BAA1B410F70A7\GENERATE.STAMP.RULE
+setlocal
+D:\Work_program\Cmake\bin\cmake.exe -SE:/GitRepo/CMakeTest/CMakeTest -BE:/GitRepo/CMakeTest/CMakeTest/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/GitRepo/CMakeTest/CMakeTest/build/Hello.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
